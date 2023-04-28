@@ -1,13 +1,13 @@
 package classes;
 
 public class Book {
-    private  String name;
-    private int publicationYear;
-    private String autor;
-    public Book(String name, int publicationYear, String autor) {
+    private  Autor autorBook;
+    private int publicationYear; 
+    private String name;
+    public Book(Autor autorBook, int publicationYear, String name) {
         this.name = name;
         this.publicationYear = publicationYear;
-        this.autor = autor;
+        this.autorBook = autorBook;
     }
     public String getName() {
         return this.name;
@@ -15,8 +15,8 @@ public class Book {
     public int getPublicationYear (){
         return this.publicationYear;
     }
-    public String getAutor() {
-        return this.autor;
+    public Autor getAutorBook() {
+        return this.autorBook;
     }
     public void setPublicationYear(int publicationYear) {
         this.publicationYear = publicationYear;

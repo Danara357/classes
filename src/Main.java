@@ -15,17 +15,17 @@ public class Main {
         System.out.println("tooAutor.lastName = " + tooAutor.getLastName());
         System.out.println(tooAutor.getFirstName() + " " + tooAutor.getMidlName() + " "  + tooAutor.getLastName());
 
-        Book cat = new Book("Cat", 2021, "Василий Иванович Пупкин");
+        Book cat = new Book(oneAutor, 2021, "Cat");
         System.out.println("cat.name = " + cat.getName());
         System.out.println("cat.publicationYear = " + cat.getPublicationYear());
-        System.out.println("cat.autor = " + cat.getAutor());
+        System.out.println("cat.autorBook = " + oneAutor.getFirstName() + " " + oneAutor.getMidlName() + " "  + oneAutor.getLastName());
         cat.setPublicationYear(2022);
         System.out.println("cat.publicationYear = " + cat.getPublicationYear());
 
-        Book dog = new Book("Dog", 2021, "Иван Васильевич Кошкин");
+        Book dog = new Book(tooAutor, 2021, "Dog");
         System.out.println("dog.name = " + dog.getName());
         System.out.println("dog.publicationYear = " + dog.getPublicationYear());
-        System.out.println("dog.autor = " + dog.getAutor());
+        System.out.println("dog.autorBook = " + tooAutor.getFirstName() + " " + tooAutor.getMidlName() + " "  + tooAutor.getLastName());
         cat.setPublicationYear(2022);
         System.out.println("dog.publicationYear = " + dog.getPublicationYear());
     }
